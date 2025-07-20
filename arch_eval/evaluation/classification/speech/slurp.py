@@ -219,4 +219,4 @@ class SLURP():
             device = device,
         )
 
-        return metrics
+        return metrics, clf_model

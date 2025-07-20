@@ -236,4 +236,4 @@ class VIVAE():
         for metric in results[0].keys():
             average_metrics[metric] = np.mean([result[metric] if result[metric] is not np.nan else 0.0 for result in results])
 
-        return average_metrics
+        return average_metrics, clf_model

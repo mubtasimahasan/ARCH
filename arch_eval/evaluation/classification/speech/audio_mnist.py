@@ -261,4 +261,5 @@ class AudioMNIST():
         for metric in results[0].keys():
             avg_results[metric] = np.mean([results[fold][metric] for fold in results.keys()])
 
-        return avg_results
+        return avg_results, clf_model
+

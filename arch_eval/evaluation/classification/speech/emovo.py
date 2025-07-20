@@ -252,4 +252,4 @@ class EMOVO():
         for metric in results[key].keys():
             avg_results[metric] = np.mean([results[fold][metric] for fold in results.keys()])
 
-        return avg_results
+        return avg_results, clf_model

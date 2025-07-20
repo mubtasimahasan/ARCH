@@ -264,4 +264,4 @@ class FSD50K():
             device = device,
         )
 
-        return metrics
+        return metrics, clf_model

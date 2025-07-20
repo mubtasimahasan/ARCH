@@ -352,5 +352,5 @@ class Jamendo():
             print('Evaluation metrics:')
             print(eval_metrics)
 
-        return eval_metrics
+        return eval_metrics, seq_clf_model
 

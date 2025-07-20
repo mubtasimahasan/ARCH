@@ -369,7 +369,8 @@ class MiviaRoad():
             print('Average results:')
             print(avg_results)
 
-        return avg_results
+        return avg_results, seq_clf_model
+
 
 
 

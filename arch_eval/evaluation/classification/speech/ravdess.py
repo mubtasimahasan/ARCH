@@ -179,4 +179,4 @@ class RAVDESS():
             device = device,
         )
 
-        return metrics
+        return metrics, clf_model

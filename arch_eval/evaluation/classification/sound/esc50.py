@@ -250,7 +250,9 @@ class ESC50():
             'f1': np.mean([results[fold]['f1'] for fold in results.keys()]),
         }
 
-        return avg_results
+        # return avg_results
+        return avg_results, clf_model
+
 
 
 
