@@ -43,7 +43,7 @@ st = SpeechTokenizerWrapper(
     config_path="../speech-token-modified/config.json",
     ckpt_path="../speech-token-modified/saved_files/fusecodec_distill/Model_best_dev.pt",
     device="cpu",
-    n_q=8,  # Use 1 for semantic-only tokens
+    n_q=8,
     max_length=80000
 )
 

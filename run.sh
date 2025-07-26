@@ -22,5 +22,7 @@ bash data_download/download_data.sh $DATASET
 echo "Starting evaluation on $DATASET..."
 python evaluate_hf_models.py \
   --verbose \
-  --enabled_datasets $DATASET #\ 
-  # --max_epochs 1 \
+  --model speechtokenizer \
+  --ckpt_path '../speech-token-modified/saved_files/fusecodec_distill/Model_best_dev.pt' \
+  --config_path '../speech-token-modified/config.json' \
+  --enabled_datasets $DATASET

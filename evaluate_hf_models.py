@@ -23,7 +23,7 @@ from arch_eval import SLURP
 from arch_eval import EMOVO
 
 from configs.w2v2_wrapper import Wav2Vec2ModelWrapper
-from wrapper import SpeechTokenizerWrapper
+from codec_wrappers.wrapper_speechtokenizer import SpeechTokenizerWrapper
 import wandb
 import os
 
@@ -38,7 +38,7 @@ parser.add_argument('--tsv_logging_file', type=str, default='results/hf_models.t
 parser.add_argument('--n_iters', type=int, default=1)
 parser.add_argument('--data_config_file', type=str, default='configs/data_config.json')
 parser.add_argument('--attentive_pooling', default=False, action = 'store_true')
-parser.add_argument('--precompute_embeddings', default=False, action = 'store_true')
+parser.add_argument('--precompute_embeddings', default=True, action = 'store_true')
 parser.add_argument('--enabled_datasets', type=str, nargs='+', default=["esc50", "us8k", "fsd50k", "vivae", 
                                                                         "fma_small", "magna_tag_a_tune", "irmas", "medleydb",
                                                                         "ravdess", "audio_mnist", "slurp", "emovo"])

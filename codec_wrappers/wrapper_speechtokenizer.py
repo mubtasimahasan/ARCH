@@ -6,7 +6,8 @@ import numpy as np
 from arch_eval import Model
 
 import sys
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../speech-token-modified')))
+# Need to git clone this repo: https://github.com/mubtasimahasan/FuseCodec
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../../speech-token-modified')))
 from codec.model_distill import Model as SpeechTokenizer
 
 class SpeechTokenizerWrapper(Model):
